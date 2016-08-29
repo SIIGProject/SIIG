@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PROCESS model-entity="JSFProcess">
+ <PROCESS-ITEM NAME="rules:#Pages#connexion.jsp"
+  PATH="/Pages/connexion.jsp" SHAPE="32,17,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#Pages#connexion.jsp:0" NAME="item"
+   PATH="/Pages/connexion.jsp" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="LoginOK_Client::#Pages#accueilClient.jsp"
+    NAME="output" PATH="/Pages/accueilClient.jsp"
+    TARGET="rules:#Pages#accueilClient.jsp" TITLE="LoginOK_Client" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="LoginNO::#Pages#connexion.jsp"
+    NAME="output1" PATH="/Pages/connexion.jsp"
+    TARGET="rules:#Pages#connexion.jsp" TITLE="LoginNO" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#Pages#client#ajouterMission.jsp"
+  PATH="/Pages/client/ajouterMission.jsp" SHAPE="32,161,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#Pages#client#ajouterMission.jsp:0"
+   NAME="item" PATH="/Pages/client/ajouterMission.jsp" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT
+    ID="LoginOK_Client::#Pages#client#accueilClient.jsp" NAME="output"
+    PATH="/Pages/client/accueilClient.jsp"
+    TARGET="rules:#Pages#client#accueilClient.jsp"
+    TITLE="LoginOK_Client" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="LoginNO::#Pages#client#connexion.jsp"
+    NAME="output1" PATH="/Pages/client/connexion.jsp"
+    TARGET="rules:#Pages#client#connexion.jsp" TITLE="LoginNO" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#Pages#accueilClient.jsp"
+  PATH="/Pages/accueilClient.jsp" SHAPE="256,33,0,0" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM NAME="rules:#Pages#client#connexion.jsp"
+  PATH="/Pages/client/connexion.jsp" SHAPE="256,321,0,0" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM NAME="rules:#Pages#client#accueilClient.jsp"
+  PATH="/Pages/client/accueilClient.jsp" SHAPE="256,177,0,0" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM NAME="rules:#Pages#client#rechercherMission.jsp"
+  PATH="/Pages/client/rechercherMission.jsp" SHAPE="32,305,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#Pages#client#rechercherMission.jsp:0"
+   NAME="item" PATH="/Pages/client/rechercherMission.jsp" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="find_OK::#Pages#client#accueilClient.jsp"
+    NAME="output" PATH="/Pages/client/accueilClient.jsp"
+    TARGET="rules:#Pages#client#accueilClient.jsp" TITLE="find_OK" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+</PROCESS>

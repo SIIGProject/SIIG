@@ -1,0 +1,235 @@
+package mpm.ig.mission.presentation;
+
+import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+
+import javax.annotation.PostConstruct;
+import javax.faces.component.html.HtmlDataTable;
+import javax.faces.model.SelectItem;
+
+import mpm.ig.mission.model.Document;
+import mpm.ig.mission.model.Typedoc;
+import mpm.ig.mission.service.Interface.DocumentService;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Scope;
+import org.springframework.stereotype.Component;
+
+@Component("docBean")
+@Scope("session")
+public class DocumentBean implements Serializable {
+
+	private static final long serialVersionUID = 1L;
+	private int idDoc;
+	private String titre;
+	private Date debut = new Date();
+	private String description;
+	private int idTypeDoc;
+	private byte[] doc;
+	List<SelectItem> mesTypes = new ArrayList<SelectItem>();
+	
+	private HtmlDataTable documentTable;
+	private String documentVide;
+	List<Document> documentList ;
+	boolean afficheTable = false;
+	boolean starSearch = false;
+	boolean empTy = false;
+
+
+
+	@Autowired
+	DocumentService documentService;
+
+	public DocumentBean() {
+		super();
+	}
+
+	@PostConstruct
+	public void init() {
+		MesTypes();
+	}
+
+	public String enregistrerDoc() {
+		Document document = new Document();
+
+		document.setIdDoc(idDoc);
+		document.setTitre(this.titre);
+		document.setDateAjout(this.debut);
+		document.setDescription(this.description);
+		document.setDoc(this.doc);
+		Typedoc typedoc = new Typedoc(idTypeDoc);
+		document.setTypedoc(typedoc);
+
+		if (documentService != null) {
+			documentService.enregistrerDoc(document);
+			return "OK";
+		} else {
+			return "Non";
+		}
+
+	}
+
+	public List<Typedoc> chargerTypes() {
+		List<Typedoc> types = documentService.uploadTypes();
+		return types;
+	}
+
+	
+
+
+
+	public List<SelectItem> MesTypes() {
+//		String first = "--- Type ---";
+//		mesTypes.add(new SelectItem(first));
+		List<Typedoc> l = chargerTypes();
+		for (Typedoc type : l) {
+			mesTypes.add(new SelectItem(type.getIdType(), type.getLibelle()));
+		}
+		return mesTypes;
+	}
+
+	
+	
+	public String chercherDocument(){
+		Document document = new Document();
+		Typedoc typedoc = new Typedoc(idTypeDoc);
+		List<Document> ListResult;
+
+		document.setTitre(titre);
+		document.setDateAjout(debut);
+		document.setTypedoc(typedoc);
+		if((titre != null && titre != "") || debut != null || idTypeDoc != 0){
+			ListResult=documentService.chercherDocument(document);
+			if (ListResult != null && ListResult.size() != 0) {
+				starSearch = true;
+				empTy = false;
+				this.documentList = ListResult;
+			}
+			else {
+				empTy = true;
+				starSearch = true;
+				this.setDocumentVide("pas de resultat");
+			}
+		}
+		else{
+		starSearch = true;
+		empTy = false;		
+		this.documentList=documentService.chercherToutDocument();
+		}
+		return "RechercheDoc";
+	}
+	
+	
+	
+	
+	
+	// -------------------------------------getters &
+	// setters---------------------------------------
+
+	public int getIdDoc() {
+		return idDoc;
+	}
+
+	public void setIdDoc(int idDoc) {
+		this.idDoc = idDoc;
+	}
+
+	public String getTitre() {
+		return titre;
+	}
+
+	public void setTitre(String titre) {
+		this.titre = titre;
+	}
+
+	public Date getDebut() {
+		return debut;
+	}
+
+	public void setDebut(Date debut) {
+		this.debut = debut;
+	}
+
+	public String getDescription() {
+		return description;
+	}
+
+	public void setDescription(String description) {
+		this.description = description;
+	}
+
+	public byte[] getDoc() {
+		return doc;
+	}
+
+	public void setDoc(byte[] doc) {
+		this.doc = doc;
+	}
+
+	public List<SelectItem> getMesTypes() {
+		return mesTypes;
+	}
+
+	public void setMesTypes(List<SelectItem> mesTypes) {
+		this.mesTypes = mesTypes;
+	}
+
+	public int getIdTypeDoc() {
+		return idTypeDoc;
+	}
+
+	public void setIdTypeDoc(int idTypeDoc) {
+		this.idTypeDoc = idTypeDoc;
+	}
+
+	public String getDocumentVide() {
+		return documentVide;
+	}
+
+	public void setDocumentVide(String documentVide) {
+		this.documentVide = documentVide;
+	}
+
+	public HtmlDataTable getDocumentTable() {
+		return documentTable;
+	}
+
+	public void setDocumentTable(HtmlDataTable documentTable) {
+		this.documentTable = documentTable;
+	}
+
+	public boolean isStarSearch() {
+		return starSearch;
+	}
+
+	public void setStarSearch(boolean starSearch) {
+		this.starSearch = starSearch;
+	}
+
+	public boolean isEmpTy() {
+		return empTy;
+	}
+
+	public void setEmpTy(boolean empTy) {
+		this.empTy = empTy;
+	}
+
+	public List<Document> getDocumentList() {
+		return documentList;
+	}
+
+	public void setDocumentList(List<Document> documentList) {
+		this.documentList = documentList;
+	}
+
+
+
+
+
+
+
+
+
+}

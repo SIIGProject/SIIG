@@ -1,0 +1,18 @@
+package mpm.ig.mission.dao.Interface;
+
+import java.util.List;
+
+import mpm.ig.mission.model.Document;
+import mpm.ig.mission.model.Typedoc;
+
+public interface DocumentDao {
+	
+	
+	
+	public void saveDocument(Document document);
+	public List<Typedoc> uploadType();
+
+	public List<Document> FindDocument(Document document);
+	
+	public List<Document> FindAllDocument();
+}

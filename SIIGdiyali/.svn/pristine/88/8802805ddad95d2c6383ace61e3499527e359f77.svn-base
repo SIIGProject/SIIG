@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:context="http://www.springframework.org/schema/context" xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.5.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-2.5.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.5.xsd">
+
+	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
+		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
+		<property name="url" value="jdbc:mysql://localhost:3306/siig" />
+		<property name="username" value="root" />
+		<property name="password" value="" />
+	</bean>
+	<!-- org.springframework.jdbc.datasource.DriverManagerDataSource org.springframework.jdbc.datasource.DriverManagerDataSource -->
+	<bean id="sessionFactory"
+		class="org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean">
+		<property name="dataSource" ref="dataSource" />
+		<property name="annotatedClasses">
+			<list>
+				<value>mpm.ig.mission.model.Account</value>
+				<value>mpm.ig.mission.model.Destination</value>
+				<value>mpm.ig.mission.model.Entite</value>
+				<value>mpm.ig.mission.model.Membreequipe</value>
+				<value>mpm.ig.mission.model.Mission</value>
+				<value>mpm.ig.mission.model.Missionpj</value>
+				<value>mpm.ig.mission.model.Profil</value>
+				<value>mpm.ig.mission.model.Typemission</value>
+				<value>mpm.ig.mission.model.Typepj</value>
+				<value>mpm.ig.mission.model.User</value>
+				<value>mpm.ig.mission.model.Ville</value>
+				<value>mpm.ig.mission.model.Consultation</value>
+				<value>mpm.ig.mission.model.Document</value>
+				<value>mpm.ig.mission.model.Element</value>
+				<value>mpm.ig.mission.model.Fonction</value>
+				<value>mpm.ig.mission.model.Module</value>
+				<value>mpm.ig.mission.model.Typedoc</value>
+
+			</list>
+		</property>
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">org.hibernate.dialect.MySQLInnoDBDialect</prop>
+			</props>
+		</property>
+	</bean>
+	<bean id="transactionManager"
+		class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+
+
+	<tx:annotation-driven transaction-manager="transactionManager" />
+	<context:component-scan base-package="mpm.ig" />
+	<context:annotation-config />
+
+
+
+</beans>

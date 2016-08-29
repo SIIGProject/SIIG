@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PROCESS model-entity="JSFProcess">
+ <PROCESS-ITEM NAME="rules:#Pages#client#ajouterMission.jsp"
+  PATH="/Pages/client/ajouterMission.jsp" SHAPE="32,161,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#Pages#client#ajouterMission.jsp:0"
+   NAME="item" PATH="/Pages/client/ajouterMission.jsp" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="AjoutM::#Pages#client#ajouterMission.jsp"
+    NAME="output" PATH="/Pages/client/ajouterMission.jsp"
+    TARGET="rules:#Pages#client#ajouterMission.jsp" TITLE="AjoutM" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT
+    ID="RechercheM::#Pages#client#rechercherMission.jsp" NAME="output1"
+    PATH="/Pages/client/rechercherMission.jsp"
+    TARGET="rules:#Pages#client#rechercherMission.jsp"
+    TITLE="RechercheM" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="AjoutD::#Pages#client#ajouterDoc.jsp"
+    NAME="output2" PATH="/Pages/client/ajouterDoc.jsp"
+    TARGET="rules:#Pages#client#ajouterDoc.jsp" TITLE="AjoutD" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="RechercheD::#Pages#client#rechercherDoc.jsp"
+    NAME="output3" PATH="/Pages/client/rechercherDoc.jsp"
+    TARGET="rules:#Pages#client#rechercherDoc.jsp" TITLE="RechercheD" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="guideD::#Pages#client#guide.jsp"
+    NAME="output4" PATH="/Pages/client/guide.jsp"
+    TARGET="rules:#Pages#client#guide.jsp" TITLE="guideD" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="planActionD::#Pages#client#planAction.jsp"
+    NAME="output5" PATH="/Pages/client/planAction.jsp"
+    TARGET="rules:#Pages#client#planAction.jsp" TITLE="planActionD" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT
+    ID="RapportmissionD::#Pages#client#rapportmission.jsp"
+    NAME="output6" PATH="/Pages/client/rapportmission.jsp"
+    TARGET="rules:#Pages#client#rapportmission.jsp"
+    TITLE="RapportmissionD" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="AutreD::#Pages#client#Autre.jsp"
+    NAME="output7" PATH="/Pages/client/Autre.jsp"
+    TARGET="rules:#Pages#client#Autre.jsp" TITLE="AutreD" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT
+    ID="rapportActiviteD::#Pages#client#rapportActivite.jsp"
+    NAME="output8" PATH="/Pages/client/rapportActivite.jsp"
+    TARGET="rules:#Pages#client#rapportActivite.jsp"
+    TITLE="rapportActiviteD" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+  <PROCESS-ITEM ID="rules:#Pages#client#ajouterMission.jsp:1"
+   NAME="item1" PATH="/Pages/client/ajouterMission.jsp" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT
+    ID="LoginOK_Client::#Pages#client#accueilClient.jsp" NAME="output"
+    PATH="/Pages/client/accueilClient.jsp"
+    TARGET="rules:#Pages#client#accueilClient.jsp"
+    TITLE="LoginOK_Client" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="LoginNO::#Pages#client#connexion.jsp"
+    NAME="output1" PATH="/Pages/client/connexion.jsp"
+    TARGET="rules:#Pages#client#connexion.jsp" TITLE="LoginNO" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#Pages#client#connexion.jsp"
+  PATH="/Pages/client/connexion.jsp" SHAPE="256,321,0,0" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM NAME="rules:#Pages#client#accueilClient.jsp"
+  PATH="/Pages/client/accueilClient.jsp" SHAPE="256,177,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#Pages#client#accueilClient.jsp:0" NAME="item"
+   PATH="/Pages/client/accueilClient.jsp" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="AjoutM::#Pages#client#ajouterMission.jsp"
+    NAME="output" PATH="/Pages/client/ajouterMission.jsp"
+    TARGET="rules:#Pages#client#ajouterMission.jsp" TITLE="AjoutM" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT
+    ID="RechercheM::#Pages#client#rechercherMission.jsp" NAME="output1"
+    PATH="/Pages/client/rechercherMission.jsp"
+    TARGET="rules:#Pages#client#rechercherMission.jsp"
+    TITLE="RechercheM" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="AjoutD::#Pages#client#ajouterDoc.jsp"
+    NAME="output2" PATH="/Pages/client/ajouterDoc.jsp"
+    TARGET="rules:#Pages#client#ajouterDoc.jsp" TITLE="AjoutD" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="RechercheD::#Pages#client#rechercherDoc.jsp"
+    NAME="output3" PATH="/Pages/client/rechercherDoc.jsp"
+    TARGET="rules:#Pages#client#rechercherDoc.jsp" TITLE="RechercheD" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="guideD::#Pages#client#guide.jsp"
+    NAME="output4" PATH="/Pages/client/guide.jsp"
+    TARGET="rules:#Pages#client#guide.jsp" TITLE="guideD" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="planActionD::#Pages#client#planAction.jsp"
+    NAME="output5" PATH="/Pages/client/planAction.jsp"
+    TARGET="rules:#Pages#client#planAction.jsp" TITLE="planActionD" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT
+    ID="RapportmissionD::#Pages#client#rapportmission.jsp"
+    NAME="output6" PATH="/Pages/client/rapportmission.jsp"
+    TARGET="rules:#Pages#client#rapportmission.jsp"
+    TITLE="RapportmissionD" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="AutreD::#Pages#client#Autre.jsp"
+    NAME="output7" PATH="/Pages/client/Autre.jsp"
+    TARGET="rules:#Pages#client#Autre.jsp" TITLE="AutreD" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT
+    ID="rapportActiviteD::#Pages#client#rapportActivite.jsp"
+    NAME="output8" PATH="/Pages/client/rapportActivite.jsp"
+    TARGET="rules:#Pages#client#rapportActivite.jsp"
+    TITLE="rapportActiviteD" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#Pages#client#rechercherMission.jsp"
+  PATH="/Pages/client/rechercherMission.jsp" SHAPE="32,305,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#Pages#client#rechercherMission.jsp:0"
+   NAME="item" PATH="/Pages/client/rechercherMission.jsp" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="AjoutM::#Pages#client#ajouterMission.jsp"
+    NAME="output" PATH="/Pages/client/ajouterMission.jsp"
+    TARGET="rules:#Pages#client#ajouterMission.jsp" TITLE="AjoutM" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT
+    ID="RechercheM::#Pages#client#rechercherMission.jsp" NAME="output1"
+    PATH="/Pages/client/rechercherMission.jsp"
+    TARGET="rules:#Pages#client#rechercherMission.jsp"
+    TITLE="RechercheM" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="AjoutD::#Pages#client#ajouterDoc.jsp"
+    NAME="output2" PATH="/Pages/client/ajouterDoc.jsp"
+    TARGET="rules:#Pages#client#ajouterDoc.jsp" TITLE="AjoutD" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="RechercheD::#Pages#client#rechercherDoc.jsp"
+    NAME="output3" PATH="/Pages/client/rechercherDoc.jsp"
+    TARGET="rules:#Pages#client#rechercherDoc.jsp" TITLE="RechercheD" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="guideD::#Pages#client#guide.jsp"
+    NAME="output4" PATH="/Pages/client/guide.jsp"
+    TARGET="rules:#Pages#client#guide.jsp" TITLE="guideD" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="planActionD::#Pages#client#planAction.jsp"
+    NAME="output5" PATH="/Pages/client/planAction.jsp"
+    TARGET="rules:#Pages#client#planAction.jsp" TITLE="planActionD" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT
+    ID="RapportmissionD::#Pages#client#rapportmission.jsp"
+    NAME="output6" PATH="/Pages/client/rapportmission.jsp"
+    TARGET="rules:#Pages#client#rapportmission.jsp"
+    TITLE="RapportmissionD" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="AutreD::#Pages#client#Autre.jsp"
+    NAME="output7" PATH="/Pages/client/Autre.jsp"
+    TARGET="rules:#Pages#client#Autre.jsp" TITLE="AutreD" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT
+    ID="rapportActiviteD::#Pages#client#rapportActivite.jsp"
+    NAME="output8" PATH="/Pages/client/rapportActivite.jsp"
+    TARGET="rules:#Pages#client#rapportActivite.jsp"
+    TITLE="rapportActiviteD" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+  <PROCESS-ITEM ID="rules:#Pages#client#rechercherMission.jsp:1"
+   NAME="item1" PATH="/Pages/client/rechercherMission.jsp" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT
+    ID="RechercheM::#Pages#client#rechercherMission.jsp" NAME="output"
+    PATH="/Pages/client/rechercherMission.jsp"
+    TARGET="rules:#Pages#client#rechercherMission.jsp"
+    TITLE="RechercheM" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+  <PROCESS-ITEM ID="rules:#Pages#client#rechercherMission.jsp:2"
+   NAME="item2" PATH="/Pages/client/rechercherMission.jsp" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="EditView::#Pages#client#ajouterMission.jsp"
+    NAME="output" PATH="/Pages/client/ajouterMission.jsp"
+    TARGET="rules:#Pages#client#ajouterMission.jsp" TITLE="EditView" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+  <PROCESS-ITEM ID="rules:#Pages#client#rechercherMission.jsp:3"
+   NAME="item3" PATH="/Pages/client/rechercherMission.jsp" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT
+    ID="ConsulterView::#Pages#client#consulterMission.jsp" NAME="output"
+    PATH="/Pages/client/consulterMission.jsp"
+    TARGET="rules:#Pages#client#consulterMission.jsp"
+    TITLE="ConsulterView" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#Pages#client#ajouterDoc.jsp"
+  PATH="/Pages/client/ajouterDoc.jsp" SHAPE="96,641,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#Pages#client#ajouterDoc.jsp:0" NAME="item"
+   PATH="/Pages/client/ajouterDoc.jsp" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="OK::#Pages#client#ajouterMission.jsp"
+    NAME="output" PATH="/Pages/client/ajouterMission.jsp"
+    TARGET="rules:#Pages#client#ajouterMission.jsp" TITLE="OK" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="AjoutM::#Pages#client#ajouterMission.jsp"
+    NAME="output1" PATH="/Pages/client/ajouterMission.jsp"
+    TARGET="rules:#Pages#client#ajouterMission.jsp" TITLE="AjoutM" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT
+    ID="RechercheM::#Pages#client#rechercherMission.jsp" NAME="output2"
+    PATH="/Pages/client/rechercherMission.jsp"
+    TARGET="rules:#Pages#client#rechercherMission.jsp"
+    TITLE="RechercheM" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="AjoutD::#Pages#client#ajouterDoc.jsp"
+    NAME="output3" PATH="/Pages/client/ajouterDoc.jsp"
+    TARGET="rules:#Pages#client#ajouterDoc.jsp" TITLE="AjoutD" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="RechercheD::#Pages#client#rechercherDoc.jsp"
+    NAME="output4" PATH="/Pages/client/rechercherDoc.jsp"
+    TARGET="rules:#Pages#client#rechercherDoc.jsp" TITLE="RechercheD" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="guideD::#Pages#client#guide.jsp"
+    NAME="output5" PATH="/Pages/client/guide.jsp"
+    TARGET="rules:#Pages#client#guide.jsp" TITLE="guideD" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="planActionD::#Pages#client#planAction.jsp"
+    NAME="output6" PATH="/Pages/client/planAction.jsp"
+    TARGET="rules:#Pages#client#planAction.jsp" TITLE="planActionD" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT
+    ID="RapportmissionD::#Pages#client#rapportmission.jsp"
+    NAME="output7" PATH="/Pages/client/rapportmission.jsp"
+    TARGET="rules:#Pages#client#rapportmission.jsp"
+    TITLE="RapportmissionD" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="AutreD::#Pages#client#Autre.jsp"
+    NAME="output8" PATH="/Pages/client/Autre.jsp"
+    TARGET="rules:#Pages#client#Autre.jsp" TITLE="AutreD" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT
+    ID="rapportActiviteD::#Pages#client#rapportActivite.jsp"
+    NAME="output9" PATH="/Pages/client/rapportActivite.jsp"
+    TARGET="rules:#Pages#client#rapportActivite.jsp"
+    TITLE="rapportActiviteD" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#Pages#client#authentification.jsp"
+  PATH="/Pages/client/authentification.jsp" SHAPE="368,33,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#Pages#client#authentification.jsp:0"
+   NAME="item" PATH="/Pages/client/authentification.jsp" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="oui::#Pages#client#accueilClient.jsp"
+    NAME="output" PATH="/Pages/client/accueilClient.jsp"
+    TARGET="rules:#Pages#client#accueilClient.jsp" TITLE="oui" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="non::#Pages#client#authentification.jsp"
+    NAME="output1" PATH="/Pages/client/authentification.jsp"
+    TARGET="rules:#Pages#client#authentification.jsp" TITLE="non" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#Pages#client#rechercherDoc.jsp"
+  PATH="/Pages/client/rechercherDoc.jsp" SHAPE="32,897,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#Pages#client#rechercherDoc.jsp:0" NAME="item"
+   PATH="/Pages/client/rechercherDoc.jsp" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT
+    ID="RechercheDoc::#Pages#client#rechercherDoc.jsp" NAME="output"
+    PATH="/Pages/client/rechercherDoc.jsp"
+    TARGET="rules:#Pages#client#rechercherDoc.jsp" TITLE="RechercheDoc" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:*" PATH="*" SHAPE="32,785,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:*:0" NAME="item" PATH="*" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="userDeconnect::#pages#admin#connexion.jsp"
+    NAME="output" PATH="/pages/admin/connexion.jsp"
+    TARGET="rules:#pages#admin#connexion.jsp" TITLE="userDeconnect" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#Pages#client#consulterMission.jsp"
+  PATH="/Pages/client/consulterMission.jsp" SHAPE="592,401,0,0" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM NAME="rules:#pages#admin#connexion.jsp"
+  PATH="/pages/admin/connexion.jsp" SHAPE="240,801,0,0" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM NAME="rules:#Pages#client#guide.jsp"
+  PATH="/Pages/client/guide.jsp" SHAPE="640,161,0,0" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM NAME="rules:#Pages#client#Autre.jsp"
+  PATH="/Pages/client/Autre.jsp" SHAPE="640,17,0,0" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM NAME="rules:#Pages#client#rapportmission.jsp"
+  PATH="/Pages/client/rapportmission.jsp" SHAPE="640,497,0,0" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM NAME="rules:#Pages#client#planAction.jsp"
+  PATH="/Pages/client/planAction.jsp" SHAPE="368,1297,0,0" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM NAME="rules:#Pages#client#rapportActivite.jsp"
+  PATH="/Pages/client/rapportActivite.jsp" SHAPE="640,161,0,0" model-entity="JSFProcessGroup"/>
+</PROCESS>

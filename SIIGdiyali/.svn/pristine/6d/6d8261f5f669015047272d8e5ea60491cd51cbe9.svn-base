@@ -1,0 +1,147 @@
+@CHARSET "ISO-8859-1";
+
+table,tr,td,th {
+	border: none;
+	border: 1px solid #ffffff;
+}
+
+table {
+	margin: auto;
+	border-collapse: collapse;
+	max-width: 660px;
+}
+
+th {
+	padding: 3px;
+}
+
+td {
+	padding: 3px;
+}
+
+table td a {
+	color: #000000;
+}
+
+.classbouton {
+	width: 150px;
+	height: 21px;
+	background: #DFD3C5;
+	color: #551A0C;
+	border: 1px solid #841C03;
+	font-size: 11px;
+	font-weight: bold;
+	cursor: pointer;
+	margin-left: 103px !important;
+	margin-left: 47px;
+}
+
+body,h1,h2,h3,h4,h5,h6,ol,ul,li,p,hr {
+	padding: 0;
+	border: none;
+}
+
+ol,ul,li {
+	list-style: none;
+	margin: auto;
+}
+
+.titre {
+	margin-left: 5px !important;
+	text-decoration: underline;
+	padding-left: 5px;
+	font-size: 15px;
+	font-weight: bold;
+	color: black;
+	padding-left: 100px;
+}
+
+.menu {
+	width: 1025px;
+	height: 30px;
+	font-family: arial, verdana, sans-serif;
+	background: #fff url(../images/index.jpg);
+}
+
+.menu li.top {
+	float: left;
+	width: 164px;
+}
+
+.menu li a.top_link {
+	display: block;
+	float: left;
+	height: 30px;
+	line-height: 33px;
+	color: white;
+	text-decoration: none;
+	font-size: 11px;
+	font-weight: bold;
+	padding: 0 0 0 32px;
+	cursor: pointer;
+}
+
+.menu li a.top_link span {
+	float: left;
+	font-weight: bold;
+	display: block;
+	padding: 0 34px 0 12px;
+	height: 40px;
+}
+
+.menu li:hover>a.top_link {
+	color: gray;
+}
+
+a:HOVER {
+	color: blue;
+}
+
+.richtabClass {
+	border: 1px solid gray;
+	padding: 10px;
+}
+
+#essay {
+	margin-top: 90px;
+	margin-right: 20px;
+}
+
+.entete {
+	font-size: 25px;
+	font-weight: normal;
+	margin-bottom: 7px;
+	color: blue;
+}
+
+/********footer*****/
+#idfooter {
+	height: 56px;
+	width: 1030px;
+	background: url("../images/footer.png") no-repeat 0 0 !important;
+	padding-top: 5px;
+	margin: auto;
+}
+
+#idfooter p {
+	margin-left: 310px;
+	color: white;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+#idfooter2 {
+	height: 56px;
+	width: 1000px;
+	background: url("../images/footer1.jpg") no-repeat 0 0 !important;
+	padding-top: 5px;
+	margin: auto;
+	margin-top: 0px;
+}
+
+#idfooter2 p {
+	margin-left: 310px;
+	color: black;
+	font-size: 12px;
+	font-weight: bold;
+}

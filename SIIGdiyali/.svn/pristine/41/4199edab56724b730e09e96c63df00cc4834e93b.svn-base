@@ -1,0 +1,42 @@
+package mpm.ig.mission.service.Implementation;
+
+
+
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import mpm.ig.mission.dao.Interface.DocumentDao;
+import mpm.ig.mission.model.Document;
+import mpm.ig.mission.model.Typedoc;
+import mpm.ig.mission.service.Interface.DocumentService;
+
+@Service("documentService")
+public class DocumentServiceImpl implements DocumentService {
+
+	@Autowired
+	DocumentDao documentDao;
+
+	@Override
+	public void enregistrerDoc(Document document) {
+		
+		documentDao.saveDocument(document);
+	}
+	public List<Typedoc> uploadTypes(){
+		return documentDao.uploadType();
+	}
+	
+	@Override
+	public List<Document> chercherDocument(Document document){
+		return documentDao.FindDocument(document);
+	}
+	
+	@Override
+	public List<Document> chercherToutDocument(){
+		return documentDao.FindAllDocument();
+
+	}
+
+}

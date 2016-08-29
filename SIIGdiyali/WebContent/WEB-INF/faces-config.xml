@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<faces-config xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-facesconfig_1_2.xsd"
+	version="1.2">
+	<application>
+		<el-resolver>org.springframework.web.jsf.el.SpringBeanFacesELResolver</el-resolver>
+	</application>
+
+	<!-- Règles de navigation -->
+	<!-- From : connexion.jsp -->
+
+	<!-- <managed-bean> <managed-bean-name>missionBean</managed-bean-name> <managed-bean-class>mpm.ig.presentation.MissionBean</managed-bean-class> 
+		<managed-bean-scope>session</managed-bean-scope> </managed-bean> -->
+		
+		<!-- from accueilClient -->
+	<navigation-rule>
+
+		<from-view-id>/Pages/client/accueilClient.jsp</from-view-id>
+		
+		<!-- /////////////////////////////Modules Missions///////////////////////////// -->
+		
+				<navigation-case>
+					<from-outcome>AjoutM</from-outcome>
+					<to-view-id>/Pages/client/ajouterMission.jsp</to-view-id>
+					<redirect />
+				</navigation-case>
+		
+				<navigation-case>
+					<from-outcome>RechercheM</from-outcome>
+					<to-view-id>/Pages/client/rechercherMission.jsp</to-view-id>
+					<redirect />
+				</navigation-case>
+		
+		<!-- /////////////////////////////Modules Documents///////////////////////////// -->
+		
+		<navigation-case>
+			<from-outcome>AjouterArchives</from-outcome>
+			<to-view-id>/Pages/client/ajouterDocAr.jsp</to-view-id>
+		</navigation-case>
+		
+		<navigation-case>
+			<from-outcome>AjouterRessources</from-outcome>
+			<to-view-id>/Pages/client/ajouterDocRes.jsp</to-view-id>
+		</navigation-case>
+		
+		<navigation-case>
+			<from-outcome>AjouterModeles</from-outcome>
+			<to-view-id>/Pages/client/ajouterDocMod.jsp</to-view-id>
+		</navigation-case>
+		
+		<navigation-case>
+			<from-outcome>RechercheDocAr</from-outcome>
+			<to-view-id>/Pages/client/rechercherDocAr.jsp</to-view-id>
+		</navigation-case>
+		
+		<navigation-case>
+			<from-outcome>RechercheDocRes</from-outcome>
+			<to-view-id>/Pages/client/rechercherDocRes.jsp</to-view-id>
+		</navigation-case>
+		
+		<navigation-case>
+			<from-outcome>RechercheDocMod</from-outcome>
+			<to-view-id>/Pages/client/rechercherDocMod.jsp</to-view-id>
+		</navigation-case>
+		
+	</navigation-rule>
+	
+	<!-- from ajouterMission -->
+	<navigation-rule>
+	
+		<from-view-id>/Pages/client/ajouterMission.jsp</from-view-id>
+	
+		<navigation-case>
+			<from-outcome>AjoutM</from-outcome>
+			<to-view-id>/Pages/client/ajouterMission.jsp</to-view-id>
+			<redirect />
+		</navigation-case>
+	
+		<navigation-case>
+			<from-outcome>RechercheM</from-outcome>
+			<to-view-id>/Pages/client/rechercherMission.jsp</to-view-id>
+			<redirect />
+		</navigation-case>
+		
+		<navigation-case>
+			<from-outcome>AjoutD</from-outcome>
+			<to-view-id>/Pages/client/ajouterDoc.jsp</to-view-id>
+			<redirect />
+		</navigation-case>
+		
+		<navigation-case>
+			<from-outcome>RechercheD</from-outcome>
+			<to-view-id>/Pages/client/rechercherDoc.jsp</to-view-id>
+			<redirect />
+		</navigation-case>
+		
+		<navigation-case>
+			<from-outcome>return</from-outcome>
+			<to-view-id>/Pages/client/accueilClient.jsp</to-view-id>
+			<redirect />
+		
+		</navigation-case>
+	</navigation-rule>
+	
+	<!-- from rechercherMission -->
+	
+	<navigation-rule>
+		<from-view-id>/Pages/client/rechercherMission.jsp</from-view-id>
+		<navigation-case>
+			<from-outcome>AjoutM</from-outcome>
+			<to-view-id>/Pages/client/ajouterMission.jsp</to-view-id>
+			<redirect />
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>RechercheM</from-outcome>
+			<to-view-id>/Pages/client/rechercherMission.jsp</to-view-id>
+			<redirect />
+		</navigation-case><navigation-case>
+			<from-outcome>AjoutD</from-outcome>
+			<to-view-id>/Pages/client/ajouterDoc.jsp</to-view-id>
+			<redirect />
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>RechercheD</from-outcome>
+			<to-view-id>/Pages/client/rechercherDoc.jsp</to-view-id>
+			<redirect />
+		</navigation-case>
+		
+		<navigation-case>
+			<from-outcome>guideD</from-outcome>
+			<to-view-id>/Pages/client/guide.jsp</to-view-id>
+			<redirect />
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>planActionD</from-outcome>
+			<to-view-id>/Pages/client/planAction.jsp</to-view-id>
+			<redirect />
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>RapportmissionD</from-outcome>
+			<to-view-id>/Pages/client/rapportmission.jsp</to-view-id>
+			<redirect />
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>AutreD</from-outcome>
+			<to-view-id>/Pages/client/Autre.jsp</to-view-id>
+			<redirect />
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>rapportActiviteD</from-outcome>
+			<to-view-id>/Pages/client/rapportActivite.jsp</to-view-id>
+			<redirect />
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>return</from-outcome>
+			<to-view-id>/Pages/client/accueilClient.jsp</to-view-id>
+			<redirect />
+		</navigation-case>
+	</navigation-rule>
+	
+	<!-- from ajouterDoc -->
+	
+	<navigation-rule>
+		<from-view-id>/Pages/client/ajouterDoc.jsp</from-view-id>
+		<navigation-case>
+			<from-outcome>OK</from-outcome>
+			<to-view-id>/Pages/client/ajouterMission.jsp</to-view-id>
+			<redirect />
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>AjoutM</from-outcome>
+			<to-view-id>/Pages/client/ajouterMission.jsp</to-view-id>
+			<redirect />
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>RechercheM</from-outcome>
+			<to-view-id>/Pages/client/rechercherMission.jsp</to-view-id>
+			<redirect />
+		</navigation-case><navigation-case>
+			<from-outcome>AjoutD</from-outcome>
+			<to-view-id>/Pages/client/ajouterDoc.jsp</to-view-id>
+			<redirect />
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>RechercheD</from-outcome>
+			<to-view-id>/Pages/client/rechercherDoc.jsp</to-view-id>
+			<redirect />
+		</navigation-case>
+		
+		<navigation-case>
+			<from-outcome>guideD</from-outcome>
+			<to-view-id>/Pages/client/guide.jsp</to-view-id>
+			<redirect />
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>planActionD</from-outcome>
+			<to-view-id>/Pages/client/planAction.jsp</to-view-id>
+			<redirect />
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>RapportmissionD</from-outcome>
+			<to-view-id>/Pages/client/rapportmission.jsp</to-view-id>
+			<redirect />
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>AutreD</from-outcome>
+			<to-view-id>/Pages/client/Autre.jsp</to-view-id>
+			<redirect />
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>rapportActiviteD</from-outcome>
+			<to-view-id>/Pages/client/rapportActivite.jsp</to-view-id>
+			<redirect />
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>return</from-outcome>
+			<to-view-id>/Pages/client/accueilClient.jsp</to-view-id>
+			<redirect />
+		</navigation-case>
+	</navigation-rule>
+	
+	
+	
+
+
+	<navigation-rule>
+		<from-view-id>/Pages/client/ajouterMission.jsp</from-view-id>
+		<navigation-case>
+			<from-outcome>LoginOK_Client</from-outcome>
+			<to-view-id>/Pages/client/accueilClient.jsp</to-view-id>
+			<redirect />
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>LoginNO</from-outcome>
+			<to-view-id>/Pages/client/connexion.jsp</to-view-id>
+			<redirect />
+		</navigation-case>
+	</navigation-rule>
+	
+	<navigation-rule>
+		<from-view-id>/Pages/client/ajouterDocAr.jsp</from-view-id>
+		<navigation-case>
+			<from-outcome>LoginOK_Client</from-outcome>
+			<to-view-id>/Pages/client/accueilClient.jsp</to-view-id>
+			<redirect />
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>LoginNO</from-outcome>
+			<to-view-id>/Pages/client/connexion.jsp</to-view-id>
+			<redirect />
+		</navigation-case>
+	</navigation-rule>
+
+	<navigation-rule>
+		<from-view-id>/Pages/client/rechercherMission.jsp</from-view-id>
+		<navigation-case>
+			<from-outcome>RechercheM</from-outcome>
+			<to-view-id>/Pages/client/rechercherMission.jsp</to-view-id>
+			<redirect />
+		</navigation-case>
+	</navigation-rule>
+
+	<navigation-rule>
+		<from-view-id>/Pages/client/rechercherMission.jsp</from-view-id>
+		<navigation-case>
+			<from-outcome>EditView</from-outcome>
+			<to-view-id>/Pages/client/ajouterMission.jsp</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+
+	<navigation-rule>
+		<from-view-id>/Pages/client/rechercherMission.jsp</from-view-id>
+		<navigation-case>
+			<from-outcome>ConsulterView</from-outcome>
+			<to-view-id>/Pages/client/consulterMission.jsp</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+
+	<navigation-rule>
+		<from-view-id>/Pages/client/authentification.jsp</from-view-id>
+		<navigation-case>
+			<from-outcome>oui</from-outcome>
+			<to-view-id>/Pages/client/accueilClient.jsp</to-view-id>
+			<redirect />
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>non</from-outcome>
+			<to-view-id>/Pages/client/authentification.jsp</to-view-id>
+			<redirect />
+		</navigation-case>
+	</navigation-rule>
+
+	<navigation-rule>
+		<from-view-id>/Pages/client/rechercherDoc.jsp</from-view-id>
+		<navigation-case>
+			<from-outcome>RechercheDoc</from-outcome>
+			<to-view-id>/Pages/client/rechercherDoc.jsp</to-view-id>
+			<redirect />
+		</navigation-case>
+	</navigation-rule>
+
+
+	<!-- From : DECONNEXION -->
+	<navigation-rule> 
+			<from-view-id>*</from-view-id> 
+		<navigation-case> 
+		<from-outcome>userDeconnect</from-outcome> <to-view-id>/pages/admin/connexion.jsp</to-view-id> 
+		</navigation-case> 
+	</navigation-rule> 
+		<!-- From : gererDomaine.jsp <navigation-rule> 
+		<from-view-id>/pages/admin/gererDomaine.jsp</from-view-id> <navigation-case> 
+		<from-outcome>add</from-outcome> <to-view-id>/pages/admin/ajouterDomaine.jsp</to-view-id> 
+		</navigation-case> <navigation-case> <from-outcome>modifier</from-outcome> 
+		<to-view-id>/pages/admin/modifierDomaine.jsp</to-view-id> </navigation-case> 
+		</navigation-rule> From : gererActivite.jsp <navigation-rule> <from-view-id>/pages/admin/gererActivite.jsp</from-view-id> 
+		<navigation-case> <from-outcome>add</from-outcome> <to-view-id>/pages/admin/ajouterActivite.jsp</to-view-id> 
+		</navigation-case> <navigation-case> <from-outcome>modifierActivite</from-outcome> 
+		<to-view-id>/pages/admin/modifierActivite.jsp</to-view-id> </navigation-case> 
+		<navigation-case> <from-outcome>activiteModifiedSuccess</from-outcome> <to-view-id>/pages/admin/gererActivite.jsp</to-view-id> 
+		</navigation-case> <navigation-case> <from-outcome>activiteDeletedSuccess</from-outcome> 
+		<to-view-id>/pages/admin/gererActivite.jsp</to-view-id> </navigation-case> 
+		</navigation-rule> From : gererAdmin.jsp <navigation-rule> <from-view-id>/pages/admin/gererAdmin.jsp</from-view-id> 
+		<navigation-case> <from-outcome>add</from-outcome> <to-view-id>/pages/admin/ajouterAdmin.jsp</to-view-id> 
+		</navigation-case> </navigation-rule> From : ajouterDomaine.jsp <navigation-rule> 
+		<from-view-id>/pages/admin/ajouterDomaine.jsp</from-view-id> <navigation-case> 
+		<from-outcome>domaineAddedSuccess</from-outcome> <to-view-id>/pages/admin/gererDomaine.jsp</to-view-id> 
+		</navigation-case> <navigation-case> <from-outcome>return</from-outcome> 
+		<to-view-id>/pages/admin/gererDomaine.jsp</to-view-id> </navigation-case> 
+		</navigation-rule> From : ajouterActivite.jsp <navigation-rule> <from-view-id>/pages/admin/ajouterActivite.jsp</from-view-id> 
+		<navigation-case> <from-outcome>activiteAddedSuccess</from-outcome> <to-view-id>/pages/admin/gererActivite.jsp</to-view-id> 
+		</navigation-case> <navigation-case> <from-outcome>return</from-outcome> 
+		<to-view-id>/pages/admin/gererActivite.jsp</to-view-id> </navigation-case> 
+		</navigation-rule> From ajouterAdmin.jsp <navigation-rule> <from-view-id>/pages/admin/ajouterAdmin.jsp</from-view-id> 
+		<navigation-case> <from-outcome>return</from-outcome> <to-view-id>/pages/admin/accueilAdmin.jsp</to-view-id> 
+		</navigation-case> </navigation-rule> modifierDomaine.jsp <navigation-rule> 
+		<from-view-id>/pages/admin/modifierDomaine.jsp</from-view-id> <navigation-case> 
+		<from-outcome>return</from-outcome> <to-view-id>/pages/admin/gererDomaine.jsp</to-view-id> 
+		</navigation-case> <navigation-case> <from-outcome>domaineModifiedSuccess</from-outcome> 
+		<to-view-id>/pages/admin/gererDomaine.jsp</to-view-id> </navigation-case> 
+		</navigation-rule> modifierActivite.jsp <navigation-rule> <from-view-id>/pages/admin/modifierActivite.jsp</from-view-id> 
+		<navigation-case> <from-outcome>return</from-outcome> <to-view-id>/pages/admin/gererActivite.jsp</to-view-id> 
+		</navigation-case> <navigation-case> <from-outcome>activiteModifiedSuccess</from-outcome> 
+		<to-view-id>/pages/admin/gererActivite.jsp</to-view-id> </navigation-case> 
+		</navigation-rule> From modifierAdmin <navigation-rule> <from-view-id>/pages/admin/modifierAdmin.jsp</from-view-id> 
+		<navigation-case> <from-outcome>userModifiedSuccess</from-outcome> <to-view-id>/pages/admin/accueilAdmin.jsp</to-view-id> 
+		</navigation-case> <navigation-case> <from-outcome>return</from-outcome> 
+		<to-view-id>/pages/admin/accueilAdmin.jsp</to-view-id> </navigation-case> 
+		</navigation-rule> From listerClient.jsp <navigation-rule> <from-view-id>/pages/admin/listerClient.jsp</from-view-id> 
+		<navigation-case> <from-outcome>return</from-outcome> <to-view-id>/pages/admin/accueilAdmin.jsp</to-view-id> 
+		</navigation-case> </navigation-rule> From planification.jsp <navigation-rule> 
+		<from-view-id>/pages/admin/planification.jsp</from-view-id> <navigation-case> 
+		<from-outcome>sejourAddedSuccess</from-outcome> <to-view-id>/pages/admin/accueilClient.jsp</to-view-id> 
+		</navigation-case> </navigation-rule> From creerCompte.jsp <navigation-rule> 
+		<from-view-id>/pages/client/creerCompte.jsp</from-view-id> <navigation-case> 
+		<from-outcome>userAddedSuccess</from-outcome> <to-view-id>/pages/client/compteEstCree.jsp</to-view-id> 
+		</navigation-case> <navigation-case> <from-outcome>returnConnexion</from-outcome> 
+		<to-view-id>/pages/admin/connexion.jsp</to-view-id> </navigation-case> </navigation-rule> 
+		From ajouterSejour.jsp <navigation-rule> <from-view-id>/pages/client/ajouterSejour.jsp</from-view-id> 
+		<navigation-case> <from-outcome>SejourToPlanification</from-outcome> <to-view-id>/pages/client/choixDomainPlanification.jsp</to-view-id> 
+		</navigation-case> <navigation-case> <from-outcome>return</from-outcome> 
+		<to-view-id>/pages/client/accueilClient.jsp</to-view-id> </navigation-case> 
+		</navigation-rule> From choixDomainPlanification.jsp <navigation-rule> <from-view-id>/pages/client/choixDomainPlanification.jsp</from-view-id> 
+		<navigation-case> <from-outcome>choixDomaine</from-outcome> <to-view-id>/pages/client/planification.jsp</to-view-id> 
+		</navigation-case> <navigation-case> <from-outcome>terminerPlanification</from-outcome> 
+		<to-view-id>/pages/client/terminerPlanification.jsp</to-view-id> </navigation-case> 
+		</navigation-rule> From planification.jsp <navigation-rule> <from-view-id>/pages/client/planification.jsp</from-view-id> 
+		<navigation-case> <from-outcome>planificationAddedSuccess</from-outcome> 
+		<to-view-id>/pages/client/choixDomainPlanification.jsp</to-view-id> </navigation-case> 
+		</navigation-rule> From terminerPlanification.jsp <navigation-rule> <from-view-id>/pages/client/terminerPlanification.jsp</from-view-id> 
+		<navigation-case> <from-outcome>return</from-outcome> <to-view-id>/pages/client/accueilClient.jsp</to-view-id> 
+		</navigation-case> </navigation-rule> From camembert.jsp <navigation-rule> 
+		<from-view-id>/pages/client/camembert.jsp</from-view-id> <navigation-case> 
+		<from-outcome>return</from-outcome> <to-view-id>/pages/client/choixSejourCamembert.jsp</to-view-id> 
+		</navigation-case> </navigation-rule> From listerSejour.jsp <navigation-rule> 
+		<from-view-id>/pages/client/listerSejour.jsp</from-view-id> <navigation-case> 
+		<from-outcome>noter</from-outcome> <to-view-id>/pages/client/notePlanification.jsp</to-view-id> 
+		</navigation-case> </navigation-rule> From notePlanification.jsp <navigation-rule> 
+		<from-view-id>/pages/client/notePlanification.jsp</from-view-id> <navigation-case> 
+		<from-outcome>rediger</from-outcome> <to-view-id>/pages/client/redigerNote.jsp</to-view-id> 
+		</navigation-case> </navigation-rule> From redigerNote.jsp <navigation-rule> 
+		<from-view-id>/pages/client/redigerNote.jsp</from-view-id> <navigation-case> 
+		<from-outcome>modifier</from-outcome> <to-view-id>/pages/client/notePlanification.jsp</to-view-id> 
+		</navigation-case> </navigation-rule> From choixSejourCamembert.jsp <navigation-rule> 
+		<from-view-id>/pages/client/choixSejourCamembert.jsp</from-view-id> <navigation-case> 
+		<from-outcome>showCamembert</from-outcome> <to-view-id>/pages/client/camembert.jsp</to-view-id> 
+		</navigation-case> <navigation-case> <from-outcome>return</from-outcome> 
+		<to-view-id>/pages/client/accueilClient.jsp</to-view-id> </navigation-case> 
+		</navigation-rule> -->
+</faces-config>

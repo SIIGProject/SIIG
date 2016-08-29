@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="SIIG_SVN">
+        <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <wb-resource deploy-path="/WEB-INF/classes/" source-path="/ImportedClasses"/>
+        <dependent-module archiveName="richfaces-impl-jsf2-3.3.3.Final.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/richfaces-impl-jsf2-3.3.3.Final/richfaces-impl-jsf2-3.3.3.Final">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="classmate-0.5.4.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/classmate-0.5.4/classmate-0.5.4">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-beanutils-1.7.0.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/commons-beanutils-1.7.0/commons-beanutils-1.7.0">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="slf4j-api-1.6.1.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/slf4j-api-1.6.1/slf4j-api-1.6.1">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-web.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/spring-web/spring-web">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="hibernate-commons-annotations.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/hibernate-commons-annotations/hibernate-commons-annotations">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="tomahawk12-1.1.11.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/tomahawk12-1.1.11/tomahawk12-1.1.11">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-orm.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/spring-orm/spring-orm">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="log4j.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/log4j/log4j">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-logging-1.1.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/commons-logging-1.1/commons-logging-1.1">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="javassist-3.12.1.GA.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/javassist-3.12.1.GA/javassist-3.12.1.GA">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="richfaces-impl-3.3.3.Final.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/richfaces-impl-3.3.3.Final/richfaces-impl-3.3.3.Final">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="hibernate-annotations.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/hibernate-annotations/hibernate-annotations">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/spring/spring">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-jdbc.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/spring-jdbc/spring-jdbc">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jta.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/jta/jta">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-dbcp-1.4.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/commons-dbcp-1.4/commons-dbcp-1.4">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="dom4j-1.6.1.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/dom4j-1.6.1/dom4j-1.6.1">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-collections-3.2.1.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/commons-collections-3.2.1/commons-collections-3.2.1">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="antlr-2.7.7.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/antlr-2.7.7/antlr-2.7.7">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jfreechart-1.0.14.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/jfreechart-1.0.14/jfreechart-1.0.14">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="richfaces-ui-3.3.3.Final.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/richfaces-ui-3.3.3.Final/richfaces-ui-3.3.3.Final">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-context.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/spring-context/spring-context">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-beanutils-core-1.7.0.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/commons-beanutils-core-1.7.0/commons-beanutils-core-1.7.0">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-beanutils-bean-collections-1.7.0.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/commons-beanutils-bean-collections-1.7.0/commons-beanutils-bean-collections-1.7.0">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="richfaces-api-3.3.3.Final.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/richfaces-api-3.3.3.Final/richfaces-api-3.3.3.Final">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jandex-1.0.3.Final.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/jandex-1.0.3.Final/jandex-1.0.3.Final">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="hibernate-core.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/hibernate-core/hibernate-core">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="slf4j-simple-1.6.1.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/slf4j-simple-1.6.1/slf4j-simple-1.6.1">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-pool-1.4.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/commons-pool-1.4/commons-pool-1.4">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-aop.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/spring-aop/spring-aop">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jcommon-1.0.17.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/jcommon-1.0.17/jcommon-1.0.17">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-beans.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/spring-beans/spring-beans">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-digester-1.8.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/commons-digester-1.8/commons-digester-1.8">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jsf-api.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/jsf-api/jsf-api">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jsf-impl.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/jsf-impl/jsf-impl">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="ejb3-persistence.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/ejb3-persistence/ejb3-persistence">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-webmvc-struts.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/spring-webmvc-struts/spring-webmvc-struts">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-test.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/spring-test/spring-test">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jstl-1.2.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/jstl-1.2/jstl-1.2">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-tx.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/spring-tx/spring-tx">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-webmvc.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/spring-webmvc/spring-webmvc">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="mysql-connector-java-5.1.6-bin.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/mysql-connector-java-5.1.6-bin/mysql-connector-java-5.1.6-bin">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="slf4j-log4j12.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/slf4j-log4j12/slf4j-log4j12">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="slf4j-api-1.5.8.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/slf4j-api-1.5.8/slf4j-api-1.5.8">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-jms.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/spring-jms/spring-jms">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-webmvc-portlet.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/spring-webmvc-portlet/spring-webmvc-portlet">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-context-support.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/spring-context-support/spring-context-support">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="swtgraphics2d.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/swtgraphics2d/swtgraphics2d">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-core.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/spring-core/spring-core">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <property name="context-root" value="SIIG_SVN"/>
+        <property name="java-output-path" value="/SIIG_SVN/build/classes"/>
+    </wb-module>
+</project-modules>

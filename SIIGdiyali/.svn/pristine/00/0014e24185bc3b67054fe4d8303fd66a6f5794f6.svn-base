@@ -1,0 +1,20 @@
+package mpm.ig.mission.service.Interface;
+
+
+import java.util.List;
+
+import mpm.ig.mission.model.Document;
+import mpm.ig.mission.model.Typedoc;
+
+public interface DocumentService {
+	
+	// Ajouter un nouveau document à la base de donnée
+	public void enregistrerDoc(Document document);
+
+	public List<Typedoc> uploadTypes();
+	
+	public List<Document> chercherDocument(Document document);
+	
+	public List<Document> chercherToutDocument();
+
+}
