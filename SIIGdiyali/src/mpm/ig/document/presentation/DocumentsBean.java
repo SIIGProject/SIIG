@@ -120,7 +120,7 @@ public class DocumentsBean implements Serializable {
 		Document document = new Document();
 		Soustypedoc Soustypedoc = new Soustypedoc(idSousType);
 		
-		document.setIdDoc(idDoc);
+	//	document.setIdDoc(idDoc);
 		document.setTitre(this.titre);
 		document.setDateAjout(this.debut);
 		document.setDescription(this.description);
